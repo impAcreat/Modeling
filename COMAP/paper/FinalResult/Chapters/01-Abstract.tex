@@ -1,0 +1,33 @@
+% summary of this article
+\thispagestyle{empty}
+
+\section*{\centering Modeling of momentum and volatility in tennis}
+%% start
+With worldwide popularity, tennis enthusiasts look to modelling to master the sport. Tennis is a game characterized by constantly changing situations. "Momentum" refers to sudden and unexpected changes in a player's performance, resulting in significant gains. \par
+
+In this article, we attempt to \textbf{quantify momentum and predict the swings during the game}. Moreover, the \textbf{visualization} of our results is emphasized to better assist players and coaches.
+
+\begin{itemize}
+    \item We propose a method that \textbf{combines AHP and TOPSIS to quantify the factors} that affect athlete momentum. Firstly, \textbf{obtain the weight matrix through the AHP method}. Then, the \textbf{TOPSIS method is used to calculate the obtained weight matrix and finally obtain the momentum score}.
+
+    \item To determine the factors affecting the swing of the game, we built a \textbf{decision tree} model \textbf{based on the CART algorithm} to predict the fluctuation of the game, and we calculated the \textbf{feature importance} of the indicators in the game, which lays the foundation for the prediction of the LSTM model in the next step.
+
+     \item An \textbf{LSTM model} is developed and continuously improved to test the hypothesis in question 2 and predict swing in games. It is the advantage of \textbf{LSTM's ability to utilize the characteristics of long and short-term memory makes it suitable} for this problem. It is our \textbf{effective measurement to swing} and \textbf{problem-specific adjustments} that enable our model to achieve such high accuracy.
+
+     \item We analyzed the swings that occurred during the model prediction process and concluded that factors such as \textbf{player age, injury situation, tactics, and psychology} have a significant impact on player performance. In terms of generalization of the model, during the analysis process, \textbf{the model performs well in predicting tennis matches}, but due to differences in rules and venues, the predictions still fluctuate. Predictions for other competitions fluctuate significantly due to varying emphasis on players.
+
+\end{itemize}
+
+In addition, our analysis and testing of the model was gradually refined during the modeling process. We have adopted a combination of \textbf{subjective and objective methods} to comprehensively consider the subjective evaluation of experts and objective data analysis, to determine the weight of influencing factors and obtain more accurate results. 
+The most \textbf{innovative aspect of our work was the measurement to swing}, which helped us to achieve better results. \textbf{The hardest work is the abundant experimentation and improvement of lstm models}\par
+
+In conclusion, considering the complexity of the real situation and the variability of the game, \textbf{our models get good performance} in problem-solving in line with realistic expectations. 
+
+\vspace{30pt}
+
+
+
+Keywords: AHP-TOPSIS, Decision Tree, LSTM, Tennis, Momentum, Swing
+
+
+

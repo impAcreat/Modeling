@@ -1,0 +1,35 @@
+\documentclass[a4paper,onecolumn,12pt]{mydesign}
+
+\usepackage{graphicx}
+\usepackage{siunitx}
+
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\setlength{\parindent}{2em} 
+\usepackage{setspace}
+\setstretch{1.2}
+
+\title{My Template}
+
+\begin{document}
+
+\input{Covers/00-Cover}
+\input{Chapters/01-Abstract}
+
+\input{Chapters/02-Catalog}
+
+\input{Chapters/03-Introduction}
+\input{Chapters/04-Assumption.tex}
+\input{Chapters/05-Model Preparation.tex}
+\input{Chapters/06-Analysis and Modeling.tex}
+\input{Chapters/07-Conclusion.tex}
+\include{Chapters/09-Model Evaluation.tex}
+\input{Chapters/08-Memorandum}
+
+\input{Chapters/11-Reference.tex}
+% \include{Chapters/11-Appendcies.tex}
+
+\end{document}

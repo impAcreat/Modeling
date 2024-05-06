@@ -1,0 +1,157 @@
+\section{Analysis and Modeling}
+
+\subsection{question 1: Analysis and visualization of momentum}
+\subsubsection{Model Description}
+To enhance the assessment of athletes’ performance, we have integrated the Analytic Hierarchy Process (AHP) with the Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) for a comprehensive evaluation of the myriad factors that affect it. By combining AHP with TOPSIS, we ensure that the subjective weighting of the criteria is accounted for while preserving the precision of the evaluation methodology. This synergy between the subjective and objective aspects of the evaluation results in a more refined and accurate analysis, thereby providing a robust framework for performance assessment.\par
+\textbf{Analytic Hierarchy Process (AHP)}
+
+AHP is a compelling decision-making tool that provides a robust multi-tiered architecture that integrates and systematically considers a myriad of evaluation metrics to solve complex problems. However, an inherent drawback of AHP is that it tends to favor subjective input from decision-makers, which, despite a structured and methodical process, can distort the results due to personal bias, potentially compromising the objectivity of the decisions made. We chose AHP for the following reasons:
+\begin{itemize}
+    \item \textbf{Decision Framework:} AHP offers a structured model to dissect complex performance assessments into clearer, specific aspects such as technical skill and conditioning. This framework simplifies the intricate task of evaluating athletes by organizing various criteria into a clear hierarchy.
+
+    \item \textbf{Prioritization:} AHP uses pairwise comparisons to systematically weigh and prioritize evaluation criteria and athlete performance. This process not only quantifies the importance of each criterion but also ranks athletes accordingly, providing a clear and quantitative assessment of their performance hierarchy.
+
+     \item \textbf{Consistency Test:} AHP includes a Consistency Ratio (CR) mechanism to validate the consistency of evaluators' judgments within the decision matrix. This test ensures the dependability of the assessment, mitigating potential inconsistencies and enhancing the credibility of the results.
+\end{itemize}\par
+\textbf{Technique for Order Preference by Similarity to Ideal Solution (TOPSIS)}
+
+The TOPSIS method provides a clear-cut decision-making model that prioritizes options closest to the ideal solution and furthest from the negative ideal. Key advantages of TOPSIS include:
+\begin{itemize}
+    \item \textbf{Data Integrity:}  TOPSIS uses raw data effectively, presenting outcomes that accurately reflect the comparative performance of alternatives.
+    \item \textbf{Intuitive Logic:} With rankings based on distances to ideal and negative conditions, the method is straightforward and comprehensible.
+    \item \textbf{Flexibility:}  It handles diverse data types and sample sizes without stringent limitations, offering adaptability to various decision-making situations.
+\end{itemize}
+\subsubsection{Data Preparation}
+ In the arena of athletic performance quantification, the concept of momentum is articulated as a composite measure that is intricately woven through the amalgamation of five critical indicators, each with its designated weight to form an integrated assessment reflective of an athlete’s prevailing competitive edge. The construct of momentum is delineated along the following dimensions:
+ \begin{itemize}
+     \item \textbf{Situational Score:} This dimension encompasses a spectrum of sub-elements, including the number of sets secured, the cumulative game tally, the points scored in the current innings, the identity of the serving party, and the scorer of the concluding rally in the previous inning.
+     \item \textbf{Lapse Situation:} Error measurement captures the instances of player missteps with a focus on the count of double faults, unforced errors, and net infractions, furnishing a portrait of error propensity during play.
+     \item \textbf{Special Scoring Ability:} This category estimates the effectiveness of premium shot execution, capturing the ace rate, the frequency of winners, and the success rate of breaking an opponent’s serve, highlighting the finesse of a player’s offensive toolkit.
+     \item \textbf{Fitness Score:} Calculated by the total distance covered on the court, this metric reflects the athlete’s physical stamina and vigor, which are essential for sustaining high-level performance throughout the match.
+     \item \textbf{Serve Situation:} This dimension is exclusively concerned with serve-specific factors, which include the total number of serves a player has executed and the recorded speeds of those serves, offering insights into the player’s serving performance.
+ \end{itemize}
+\subsubsection{Modeling Process}
+Firstly, for the previously screened and classified data, the judgment matrix R is constructed based on the five characteristics of the situation on the field based on the expert scoring method, and the specific values are shown in the heat map(Figure \ref{fig:JM}).
+\begin{figure}[bt!]
+    \centering
+    \includegraphics[width=1\linewidth]{figure/Heat Map.jpg}
+    \caption{\centering Judgment Matrix}
+    \label{fig:JM}
+\end{figure}
+
+
+The process of standardization is as follows:
+\begin{itemize}
+    \item Note that the maximum feature root is $\lambda_{\text{max}}$ ,then the consistency metric can be recorded as:
+    \begin{equation}
+        CI = \frac{\lambda_{\text{max}} - n}{n - 1}
+    \end{equation}
+    \item In the analytic hierarchy process(AHP), the Consistency Index (CI) is computed from the given pairwise comparison matrix. The accompanying Random Index (RI) is derived from a standard lookup table. Through the combination of CI and RI, the Consistency Ratio (CR) is determined, offering a quantifiable metric for assessing the matrix’s consistency as documented in Table \ref{tab:TCC}.
+    \begin{equation}
+        CR = \frac{CI}{RI}
+    \end{equation}
+    \begin{table}[!bt]
+    \centering
+    \caption{\centering Consistency Checklist} 
+    \label{tab:TCC}
+    \begin{tabular}{@{}lcccc@{}} % @{} removes padding at the start and end of the table
+        \toprule
+        & \textbf{On-court situation} & \textbf{Turnover} & \textbf{Special Scoring Ability}  \\
+        \midrule
+        \textbf{CI} & 0.025751807 & 0.009147232 & 0.009147339 \\
+        \textbf{CR} & 0.022992685 & 0.01759083 & 0.017591037  \\
+        \bottomrule
+    \end{tabular}
+    
+\end{table}
+
+
+In AHP, a concordance ratio (CR) of less than 0.1 indicates that the matrix has acceptable agreement. The data provided demonstrate that all three judgment matrices considered meet this criterion. Subsequently, the weight matrix derived by the arithmetic mean method has weights that meet the predefined criteria, which meets the requirements of our analysis. As shown in Figure \ref{fig:WPC}, the final weight proportion chart is displayed.
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{figure/Percentage Map.jpg}
+    \caption{\centering Weights Percentage Chart}
+    \label{fig:WPC}
+\end{figure}
+
+\item In developing the Similarity Ranking First Technique with Ideal Solution (TOPSIS), the first step involves the forward transformation of the evaluation metrics. Consider metrics such as error score, double error rate, unforced error count, and net error rate; These represent performance attributes where smaller values have an intrinsic advantage to the person being evaluated, in this case, the player. These metrics are designated as “minimal” metrics in the assessment classification.
+In order to address the different nature of the indicators within the TOPSIS framework and to ensure standardized comparisons, minimalist indicators require a conversion in the opposite direction of their original direction. This transformation converts a lower, more favorable value into a larger value, which is associated with enhanced performance in the normalized decision matrix. The positive transformation of these minimalist indicators is mathematically expressed as:
+\begin{equation}
+    \hat{x}_{i} = \max - x_{i}
+\end{equation}
+\item In order to eliminate the influence of different data indicator dimensions, it is also necessary to standardize the forward matrix, and the normalized matrix is Z, where 
+\begin{equation}
+    Z_{ij} = \frac{x_{ij}}{\sqrt{\sum_{i=1}^{n} x_{ij}^{2}}}
+\end{equation}
+In a situation where there are\textit{ n }schemes to be evaluated and \textit{m} indicators, the vector \(Z_{i}\) is used to express the values of the indicators for the ith scheme.At this time,$\ z_{i}=[z_{i1},z_{i2},\cdots,z_{im} ]$
+The matrix composed of these \textit{n} vectors forms the normalized matrix Z :
+ \begin{equation}
+ Z_{ij}=
+ \left[
+ \begin{array}{cccc}
+     z_{11}  &z_{12}  &\cdots   &z_{1m} \\
+     z_{21}  &z_{22}  &\cdots   &z_{2m} \\
+     \vdots   & \vdots  & \ddots & \vdots  \\
+     z_{n1}  &z_{n2}  &\cdots   &z_{nm} \\
+ \end{array}
+ \right]        
+ \end{equation}
+ \item The previously calculated weight matrix was utilized to assign weights to the variable Z.
+ \item The ideal optimal solution is \(Z^{+}\), and the ideal worst solution is \(Z^{-}\), and the formula for calculating the two is as follows:
+\begin{equation}
+    Z^{+} =[max\left \{ z_{11},z_{21},\cdots ,z_{n1} \right \} ,max\left \{ z_{12},z_{22},\cdots ,z_{n2} \right \},\cdots ,max\left \{ z_{1m},z_{2m},\cdots ,z_{nm} \right \}]
+\end{equation}
+\begin{equation}
+Z^{-} =[min\left \{ z_{11},z_{21},\cdots ,z_{n1} \right \} ,min\left \{ z_{12},z_{22},\cdots ,z_{n2} \right \},\cdots ,min\left \{ z_{1m},z_{2m},\cdots ,z_{nm} \right \}]
+\end{equation}
+\item For the ith scheme \(Z_{i}\), calculate its distance from the optimal solution( \(d_{i}^{+}\) ) and the distance from the worst solution( \(d_{i}^{-}\) )
+\begin{equation}
+d^{+}_{i}=\sqrt{\sum_{j=1}^{m}{(z^{+}_{j}-z_{ij})^{2}} }
+\ \ \ \ \ \ \ \ 
+d^{-}_{i}=\sqrt{\sum_{j=1}^{m}{(z^{-}_{j}-z_{ij})^{2}} }
+\end{equation}
+\item Define the score of the ith scheme as \(S_{i}\), which is calculated as:
+\begin{equation}
+    S_{i}=\frac{d^{-}_{i}}{d^{+}_{i}+d^{-}_{i}}
+\end{equation}
+
+The \(S_{i}\) is the score (the Table3 shows some of the processed data)
+
+\item After obtaining the five scores required to calculate the momentum, the AHP-TOPSIS model was used to evaluate the momentum scores, and the judgment matrix and weights were shown in Figure \ref{fig:M1} and Figure \ref{fig:M2}
+\begin{figure}[bt!]
+    \centering
+    \includegraphics[width=0.5\linewidth]{figure/势头.jpg}
+    \caption{\centering Momentum Judgment Matrix}
+    \label{fig:M1}
+\end{figure}
+\begin{figure}[bt!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{figure/势头2.jpg}
+    \caption{\centering Momentum Weight Chart}
+    \label{fig:M2}
+\end{figure}
+\end{itemize}
+
+\subsubsection{Result}
+\begin{figure}[bt!]
+    \centering
+    \includegraphics[width=1\linewidth]{figure/经典场.png}
+    \caption{\centering Momentum Chart of the Game}
+    \label{fig:M3}
+\end{figure}
+
+Figure \ref{fig:M3} shows the momentum scores of Carlos Alcaraz and Novak Djokovic in the match described in question, which is divided into five sets:
+\begin{itemize}
+    \item \textbf{1th:}At the beginning of the match, Novak Djokovic won the first game by overwhelmingly overpowering Carlos Alcaraz.
+    \item \textbf{2th:}In the second game, the momentum of both sides was evenly scored, and it was very anxious.
+    \item \textbf{3th:}In the third game, Carlos Alcaraz had a big lead, but Novak Djokovic was in the upper hand for a period of time starting at 2:31:32, which was affected by Novak Djokovic serving 32 balls as a serve (32 points in the game), and then Carlos Alcaraz regained control to win the third game.
+    \item \textbf{4th:}In the fourth game, the two sides were anxious, but Novak Djokovic maintained the lead.
+    \item \textbf{5th:}In the final fifth inning, Novak Djokovic had a big start but then Carlos Alcaraz rose up and scored clearly more momentum than Novak Djokovic to win the match
+\end{itemize}
+
+The visually presented line chart, or any other chart showcasing the momentum of player, highlights the hypothesis that higher momentum indicates superior performance by the player at that moment. Additionally, the disparity in momentum can serve as an indicator of the relative performance between the two players.
+
+\input{Chapters/06-2}
+\input{Chapters/06-3}
+\input{Chapters/06-4}
+

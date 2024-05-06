@@ -1,0 +1,14 @@
+% model evaluation: including both strength and weakness
+\section{Model Evaluation}
+\subsection{AHP-TOPSIS}
+\subsubsection{Strengths}
+In the process of predicting players' momentum, we use a method that combines AHP and TOPSIS. AHP quantifies the weight of factors that affect tennis players' performance, and the TOPSIS method objectively evaluates solutions with given weights. Through the combination of subjectivity and objectivity, the data can better quantitatively describe the athlete's momentum. Judging from the prediction results of the model, as shown in Figure \ref{fig:M3}, it can be seen that the momentum gained through the combination of AHP and TOPSIS can predict the victory of the game to a high extent.
+\subsubsection{Development}
+In the process of using AHP to determine the weight, personal subjectivity sometimes dominates the judgment, resulting in an insufficiently objective evaluation of the impact of each factor on the athlete's momentum. The division and classification of data are not considered comprehensively, and some data that may be helpful for momentum prediction are not reasonably divided into the correct categories or even abandoned. As can be seen from Figure \ref{fig:PA}, the prediction accuracy results for multiple games still fluctuate, so there is still room for improvement in data processing.
+
+\subsection{LSTM}
+\subsubsection{Strength}
+In the section Analysis and Modeling, we describe in detail the improvement process of the LSTM model. The model's greatest strength is the LSTM's ability to utilize the characteristics of long and short-term memory and our adjustments to the model.
+
+\subsection{Development}
+We believe that a player's personal characteristics have a significant impact on the game, and therefore, it is crucial to introduce this component into the model. By doing so, the model can analyze the game not only based on its current situation but also in a more targeted way by considering the players' unique characteristics.
