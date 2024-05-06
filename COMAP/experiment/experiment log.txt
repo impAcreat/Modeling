@@ -1,0 +1,481 @@
+-------------------------------------------------------------------------------epochs
+
+Loss: 0.07776051016790526
+Accuracy: 0.7598214285714285
+----evaluation finished----
+----args----
+hiddensize: 12, layers:  1
+epochs: 100, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+--------------------------------------------------
+Loss: 0.0714632175969226
+Accuracy: 0.7853571428571429
+----evaluation finished----
+----args----
+hiddensize: 12, layers:  1
+epochs: 150, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+------------------------------------------------
+Loss: 0.07026795457516398
+Accuracy: 0.7878571428571428
+----evaluation finished----
+----args----
+hiddensize: 12, layers:  1
+epochs: 200, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+------------------------------------------------
+Loss: 0.06713163180010659
+Accuracy: 0.7975
+----evaluation finished----
+----args----
+hiddensize: 12, layers:  1
+epochs: 400, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+-------------------------------------------------------------------------(test
+Loss: 0.08655414868925893
+Accuracy: 0.7488856589147287
+----evaluation finished----
+----args----
+hiddensize: 12, layers:  1
+epochs: 100, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+-------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------process swing
+
+Loss: 0.17969673681397771
+Accuracy: 0.6689437984496124
+----evaluation finished----
+----args----
+hiddensize: 16, layers:  1
+epochs: 80, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+--------------------------------------------------
+
+
+Loss: 0.17782577976237895
+Accuracy: 0.6704941860465117
+----evaluation finished----
+----args----
+hiddensize: 16, layers:  1
+epochs: 50, learn rate: 0.001
+batch size: 32, window size: 10
+
+Loss: 0.17158039018165233
+Accuracy: 0.6687500000000001
+----evaluation finished----
+----args----
+hiddensize: 16, layers:  1
+epochs: 50, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+--------------------------------------------------
+
+
+Loss: 0.17735890662947365
+Accuracy: 0.6579457364341086
+----evaluation finished----
+----args----
+hiddensize: 7, layers:  1
+epochs: 50, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+
+----------------------------------------------------
+Loss: 0.1780525763020959
+Accuracy: 0.6564922480620156
+----evaluation finished----
+----args----
+hiddensize: 12, layers:  1
+epochs: 50, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* learning rate
+* epochs	* 
+* window_size	* 
+* hidden_size	* 
+* layers		* 
+
+---------------------args： 0.001/50/20/64/1 ---------------------
+Epoch [50/50], Loss: 0.5567113757133484
+----training finished----
+Loss: 0.691849946975708
+Accuracy: 0.58
+F1: 0.6181818181818182
+F2: 0.5985915492957746
+F0.5: 0.6390977443609023
+Loss: 0.7315512299537659
+Accuracy: 0.62
+F1: 0.6885245901639343
+F2: 0.695364238410596
+F0.5: 0.6818181818181818
+Loss: 0.6738584637641907
+Accuracy: 0.62
+F1: 0.6545454545454545
+F2: 0.6474820143884892
+F0.5: 0.6617647058823529
+Loss: 0.6910005807876587
+Accuracy: 0.56
+F1: 0.576923076923077
+F2: 0.6198347107438017
+F0.5: 0.5395683453237411
+Loss: 0.6853485703468323
+
+---------------------args： 0.001/50/20/64/2 ---------------------
+Epoch [45/50], Loss: 0.5528404116630554
+Epoch [46/50], Loss: 0.5666157007217407
+Epoch [47/50], Loss: 0.5465608835220337
+Epoch [48/50], Loss: 0.5219522714614868
+Epoch [49/50], Loss: 0.5702982544898987
+Epoch [50/50], Loss: 0.5689607858657837
+----training finished----
+Loss: 0.7106735110282898
+Accuracy: 0.58
+F1: 0.6037735849056604
+F2: 0.5714285714285714
+F0.5: 0.6399999999999999
+Loss: 0.7142611742019653
+Accuracy: 0.66
+F1: 0.711864406779661
+F2: 0.7046979865771812
+F0.5: 0.7191780821917808
+Loss: 0.6699658036231995
+Accuracy: 0.66
+F1: 0.7118644067796611
+F2: 0.7342657342657343
+F0.5: 0.6907894736842105
+Loss: 0.6796115040779114
+Accuracy: 0.6
+F1: 0.5833333333333334
+F2: 0.5982905982905984
+F0.5: 0.5691056910569107
+Loss: 0.6729186773300171
+
+---------------------args： 0.001/50/10/64/2 ---------------------
+Epoch [46/50], Loss: 0.5843014717102051
+Epoch [47/50], Loss: 0.5813899040222168
+Epoch [48/50], Loss: 0.5809224843978882
+Epoch [49/50], Loss: 0.5773029923439026
+Epoch [50/50], Loss: 0.5804799199104309
+----training finished----
+Loss: 0.6894699335098267
+Accuracy: 0.58
+F1: 0.631578947368421
+F2: 0.6818181818181819
+F0.5: 0.5882352941176471
+Loss: 0.7167292237281799
+Accuracy: 0.52
+F1: 0.5862068965517241
+F2: 0.5862068965517241
+F0.5: 0.5862068965517241
+Loss: 0.7391987442970276
+Accuracy: 0.52
+F1: 0.5555555555555555
+F2: 0.5681818181818181
+F0.5: 0.5434782608695652
+Loss: 0.6374983787536621
+Accuracy: 0.62
+F1: 0.6666666666666667
+F2: 0.6884057971014493
+F0.5: 0.6462585034013606
+Loss: 0.7210895419120789
+
+---------------------args： 0.001/50/10/128/1 ---------------------
+
+
+
+-------------------layer
+--------------------------------------
+--------------------------------------------------------
+	# demension:
+hidden_size = 32   #
+window_size = 20    # 
+	# training:
+num_epochs = 50     #
+
+(layer =3)
+------------------------------------------------------
+Epoch [46/50], Loss: 0.6386988922953606
+Epoch [47/50], Loss: 0.637405414879322
+Epoch [48/50], Loss: 0.6382733225822449
+Epoch [49/50], Loss: 0.6351945872108141
+Epoch [50/50], Loss: 0.6315188537041346
+----training finished----
+Accuracy: 0.6
+Accuracy: 0.66
+Accuracy: 0.72
+Accuracy: 0.64
+Accuracy: 0.66
+Accuracy: 0.7
+Accuracy: 0.6
+Accuracy: 0.56
+Accuracy: 0.46
+Accuracy: 0.56
+Accuracy: 0.64
+Accuracy: 0.62
+Accuracy: 0.68
+Loss: 0.653748503098121
+Accuracy: 0.6230769230769231
+F1: 0.6256318860235304
+F2: 0.6132705611428058
+F0.5: 0.6385017813957234
+
+(layer =4)
+---------------------------------------------------
+Epoch [46/50], Loss: 0.6397697895765304
+Epoch [47/50], Loss: 0.6384238806863626
+Epoch [48/50], Loss: 0.6379954715569814
+Epoch [49/50], Loss: 0.6408921947081884
+Epoch [50/50], Loss: 0.6395181561509768
+----training finished----
+Accuracy: 0.52
+Accuracy: 0.74
+Accuracy: 0.58
+Accuracy: 0.6
+Accuracy: 0.68
+Accuracy: 0.62
+Accuracy: 0.66
+Accuracy: 0.54
+Accuracy: 0.64
+Accuracy: 0.52
+Accuracy: 0.54
+Accuracy: 0.74
+Accuracy: 0.56
+Loss: 0.664827035023616
+Accuracy: 0.6107692307692307
+F1: 0.6356518671043627
+F2: 0.6490637485405333
+F0.5: 0.6227830352703769
+
+
+(layer =5)
+------------------------------------------------------
+Epoch [46/50], Loss: 0.6254982180893421
+Epoch [47/50], Loss: 0.6253273243705432
+Epoch [48/50], Loss: 0.6250709379712741
+Epoch [49/50], Loss: 0.6283758461475373
+Epoch [50/50], Loss: 0.6406508028507233
+----training finished----
+Accuracy: 0.74
+Accuracy: 0.5
+Accuracy: 0.56
+Accuracy: 0.56
+Accuracy: 0.66
+Accuracy: 0.54
+Accuracy: 0.6
+Accuracy: 0.58
+Accuracy: 0.48
+Accuracy: 0.68
+Accuracy: 0.58
+Accuracy: 0.6
+Accuracy: 0.68
+Loss: 0.6686058640480042
+Accuracy: 0.5969230769230769
+F1: 0.5986500132460542
+F2: 0.6058977488141618
+F0.5: 0.5915736225616756
+
+(layer =8)
+---------------------------------------------------
+Epoch [46/50], Loss: 0.6658217534422874
+Epoch [47/50], Loss: 0.6653563350439071
+Epoch [48/50], Loss: 0.6656094600756963
+Epoch [49/50], Loss: 0.6640888397892316
+Epoch [50/50], Loss: 0.665372244020303
+----training finished----
+Accuracy: 0.66
+Accuracy: 0.38
+Accuracy: 0.64
+Accuracy: 0.62
+Accuracy: 0.54
+Accuracy: 0.56
+Accuracy: 0.44
+Accuracy: 0.58
+Accuracy: 0.58
+Accuracy: 0.5
+Accuracy: 0.66
+Accuracy: 0.54
+Accuracy: 0.54
+Loss: 0.6898260024877695
+Accuracy: 0.556923076923077
+F1: 0.6032582617371055
+F2: 0.6537807273841516
+F0.5: 0.5599841503792722
+
+
+---------------------------------------
+-----------------------------------------------------
+---------------------------------------------------------------------------
+
+
+
+-------------------
+--------------------------------------
+--------------------------------------------------------
+Average Loss(MSE): 5.899342897326448	--------设为true
+Average MAE: 1.670364546221356
+Average R2: -0.07508725431753448
+----evaluation finished----
+----args----
+hiddensize: 32, layers:  1
+epochs: 50, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+Average Loss(MSE): 5.095517904259438	--------设为false
+Average MAE: 1.5505562688029089
+Average R2: -0.003496647277701557
+----evaluation finished----
+----args----
+hiddensize: 32, layers:  1
+epochs: 50, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+------------------------------------------------------------
+Average Loss(MSE): 5.470043822776439
+Average MAE: 1.5502548009850259
+Average R2: -0.08120250542197543
+----evaluation finished----
+----args----
+hiddensize: 32, layers:  1
+epochs: 75, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+------------------------------------------------------------
+Average Loss(MSE): 5.0632523021032645
+Average MAE: 1.5624824152436367
+Average R2: 0.007668755793720061
+----evaluation finished----
+----args----
+hiddensize: 32, layers:  1
+epochs: 40, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+Average Loss(MSE): 5.076677937840307
+Average MAE: 1.6155551422473997
+Average R2: 0.0042287897573121975
+----evaluation finished----
+----args----
+hiddensize: 32, layers:  1
+epochs: 30, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+-------------------------------------------------------------
+Average Loss(MSE): 5.1163118218266685
+Average MAE: 1.5947229529536047
+Average R2: 0.017331129757049615
+----evaluation finished----
+----args----
+hiddensize: 16, layers:  1
+epochs: 40, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+Average Loss(MSE): 5.035306750341904
+Average MAE: 1.528109238591305
+Average R2: 0.0164862258893729
+----evaluation finished----
+----args----
+hiddensize: 16, layers:  1
+epochs: 100, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+
+------------------------------------------------------------
+Average Loss(MSE): 5.006955601448237
+Average MAE: 1.5695988438850226
+Average R2: 0.05322269708291997
+----evaluation finished----
+----args----
+hiddensize: 8, layers:  1
+epochs: 100, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+Average Loss(MSE): 4.958042729732602
+Average MAE: 1.5250979162925897
+Average R2: 0.020602296853788848
+----evaluation finished----
+----args----
+hiddensize: 8, layers:  1
+epochs: 200, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+verage Loss(MSE): 5.490444114041883
+Average MAE: 1.5902176041935765
+Average R2: -0.05731723374342168
+----evaluation finished----
+----args----
+hiddensize: 8, layers:  1
+epochs: 1000, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+---------------------------------------------------------
+Average Loss(MSE): 4.578765464383502
+Average MAE: 1.4928549029106317
+Average R2: 0.10411933582941586
+----evaluation finished----
+----args----
+hiddensize: 12, layers:  1
+epochs: 100, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+
+-----------------------------------
+--------------------------------------------
+--------------------------------------------------------

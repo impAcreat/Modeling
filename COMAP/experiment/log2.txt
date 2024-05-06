@@ -1,0 +1,50 @@
+-----------------------------------------------------------------------windowsize
+Loss: 0.09944326792131453
+Accuracy: 0.765625
+----evaluation finished----
+----args----
+hiddensize: 27, layers:  1
+epochs: 100, learn rate: 0.001
+batch size: 32, window size: 60
+----end----
+
+-----------------------------------------------
+Loss: 0.09657157957553864
+Accuracy: 0.7721036585365854
+----evaluation finished----
+----args----
+hiddensize: 27, layers:  1
+epochs: 100, learn rate: 0.001
+batch size: 32, window size: 20
+----end----
+
+-----------------------------------------------------
+Loss: 0.09964653130534083
+Accuracy: 0.7421511627906977
+----evaluation finished----
+----args----
+hiddensize: 27, layers:  1
+epochs: 100, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+------------------------------------------------------
+Loss: 0.09436537156050856
+Accuracy: 0.7471875
+----evaluation finished----
+----args----
+hiddensize: 27, layers:  1
+epochs: 80, learn rate: 0.001
+batch size: 32, window size: 5
+----end----
+
+--------------------------------------------------------------------hiddensize
+Accuracy: 0.75
+----evaluation finished----
+----args----
+hiddensize: 17, layers:  1
+epochs: 100, learn rate: 0.001
+batch size: 32, window size: 20
+----end----
+
+-------------------------------------------------

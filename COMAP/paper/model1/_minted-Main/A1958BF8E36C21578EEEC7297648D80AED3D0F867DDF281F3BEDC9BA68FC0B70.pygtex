@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZpc{} Function to compute the sum without charge of two vectors}
+\PYG{k}{function}\PYG{+w}{ }X\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nf}{BitXorMatrix}\PYG{p}{(}A,B\PYG{p}{)}
+\PYG{+w}{	}\PYG{c}{\PYGZpc{} Convert elements into usigned integers}
+	\PYG{n}{A} \PYG{p}{=} \PYG{n}{uint8}\PYG{p}{(}\PYG{n}{A}\PYG{p}{);}
+	\PYG{n}{B} \PYG{p}{=} \PYG{n}{uint8}\PYG{p}{(}\PYG{n}{B}\PYG{p}{);}
+
+	\PYG{n}{m1} \PYG{p}{=} \PYG{n+nb}{length}\PYG{p}{(}\PYG{n}{A}\PYG{p}{);}
+	\PYG{n}{m2} \PYG{p}{=} \PYG{n+nb}{length}\PYG{p}{(}\PYG{n}{B}\PYG{p}{);}
+	\PYG{n}{X} \PYG{p}{=} \PYG{n}{uint8}\PYG{p}{(}\PYG{n+nb}{zeros}\PYG{p}{(}\PYG{n}{m1}\PYG{p}{,} \PYG{n}{m2}\PYG{p}{));}
+	\PYG{k}{for} \PYG{n}{n1}\PYG{p}{=}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{n}{m1}
+		\PYG{k}{for} \PYG{n}{n2}\PYG{p}{=}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{n}{m2}
+			\PYG{n}{X}\PYG{p}{(}\PYG{n}{n1}\PYG{p}{,} \PYG{n}{n2}\PYG{p}{)} \PYG{p}{=} \PYG{n+nb}{bitxor}\PYG{p}{(}\PYG{n}{A}\PYG{p}{(}\PYG{n}{n1}\PYG{p}{),} \PYG{n}{B}\PYG{p}{(}\PYG{n}{n2}\PYG{p}{));}
+		\PYG{k}{end}
+	\PYG{k}{end}
+\end{Verbatim}

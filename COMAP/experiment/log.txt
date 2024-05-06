@@ -1,0 +1,216 @@
+----------------------------------------------------------epoch:hiddensize=12
+Loss: 0.08401489162514376
+Accuracy: 0.7489341085271317
+----evaluation finished----
+----args----
+hiddensize: 12, layers:  1
+epochs: 50, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+---------------------------------------------
+Loss: 0.08617229192236135
+Accuracy: 0.7430717054263566
+----evaluation finished----
+----args----
+hiddensize: 12, layers:  1
+epochs: 100, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+-----------------------------------------------
+Loss: 0.08699412176082301
+Accuracy: 0.7553779069767442
+----evaluation finished----
+----args----
+hiddensize: 12, layers:  1
+epochs: 80, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+----------------------------------------------
+Loss: 0.08644615460273831
+Accuracy: 0.7395348837209302
+----evaluation finished----
+----args----
+hiddensize: 12, layers:  1
+epochs: 65, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+----------------------------------------------------------------------hiddensize
+Loss: 0.08675422935291778
+Accuracy: 0.7395348837209302
+----evaluation finished----
+----args----
+hiddensize: 6, layers:  1
+epochs: 80, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+--------------------------------------------------
+
+Loss: 0.0874089660166308
+Accuracy: 0.7510174418604652
+----evaluation finished----
+----args----
+hiddensize: 8, layers:  1
+epochs: 80, learn rate: 0.001
+batch size: 32, window size: 10
+----end-----
+
+--------------------------------------------------
+Loss: 0.08593817219831222
+Accuracy: 0.7435562015503876
+----evaluation finished----
+----args----
+hiddensize: 10, layers:  1
+epochs: 80, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+--------------------------------------------------
+Loss: 0.07850083509503408
+Accuracy: 0.7670058139534884
+----evaluation finished----
+----args----
+hiddensize: 16, layers:  1
+epochs: 80, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+------------------------------------------------
+Loss: 0.09614698207655618
+Accuracy: 0.7496124031007753
+----evaluation finished----
+----args----
+hiddensize: 32, layers:  1
+epochs: 80, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+-------------------------------------------------
+Loss: 0.09110983365843463
+Accuracy: 0.7546996124031008
+----evaluation finished----
+----args----
+hiddensize: 18, layers:  1
+epochs: 80, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+-----------------------------------------------
+
+------------------------------------------------------------------------epoch:hiddensize = 16
+--------------------------------------------------
+Loss: 0.07850083509503408
+Accuracy: 0.7670058139534884
+----evaluation finished----
+----args----
+hiddensize: 16, layers:  1
+epochs: 80, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+------------------------------------------------
+Accuracy: 0.7501937984496124
+----evaluation finished----
+----args----
+hiddensize: 16, layers:  1
+epochs: 70, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+
+-------------------------------------------------
+Loss: 0.08533645334631898
+Accuracy: 0.7444767441860466
+----evaluation finished----
+----args----
+hiddensize: 16, layers:  1
+epochs: 60, learn rate: 0.001
+batch size: 32, window size: 10
+----end----
+---------------------------------------------------
+
+
+--------------------------------------------------------------------windowsize
+(10的取上面最好的哪个）0.76	
+-----------------------------------------
+Accuracy: 0.7507621951219512
+----evaluation finished----
+----args----
+hiddensize: 16, layers:  1
+epochs: 70, learn rate: 0.001
+batch size: 32, window size: 20
+----end----
+--------------------------------------------------
+Loss: 0.09101545568555594
+Accuracy: 0.7356971153846155
+----evaluation finished----
+----args----
+hiddensize: 16, layers:  1
+epochs: 70, learn rate: 0.001
+batch size: 32, window size: 25
+----end----
+
+--------------------------------------------------
+Loss: 0.0964008870606239
+Accuracy: 0.7286324786324787
+----evaluation finished----
+----args----
+hiddensize: 16, layers:  1
+epochs: 70, learn rate: 0.001
+batch size: 32, window size: 30
+----end----
+-----------------------------------------------
+Loss: 0.08760847262031324
+Accuracy: 0.7345559845559845
+----evaluation finished----
+----args----
+hiddensize: 16, layers:  1
+epochs: 70, learn rate: 0.001
+batch size: 32, window size: 40
+----end----
+
+------------------------------------------------
+Loss: 0.08058587171965176
+Accuracy: 0.7705439814814814
+----evaluation finished----
+----args----
+hiddensize: 16, layers:  1
+epochs: 70, learn rate: 0.001
+batch size: 32, window size: 50
+----end----
+Loss: 0.08706840386407243
+Accuracy: 0.7705439814814814
+----evaluation finished----
+----args----
+hiddensize: 16, layers:  1
+epochs: 70, learn rate: 0.001
+batch size: 32, window size: 50
+Accuracy: 0.7552083333333334
+----evaluation finished----
+----args----
+hiddensize: 16, layers:  1
+epochs: 70, learn rate: 0.001
+batch size: 32, window size: 50
+----end----
+
+-----------------------------------------------
+Loss: 0.08698570027070887
+Accuracy: 0.7545955882352942
+----evaluation finished----
+----args----
+hiddensize: 16, layers:  1
+epochs: 70, learn rate: 0.001
+batch size: 32, window size: 60
+----end----
+
+-----------------------------------------------
+Accuracy: 0.7347506009615384
+----evaluation finished----
+----args----
+hiddensize: 16, layers:  1
+epochs: 70, learn rate: 0.001
+batch size: 32, window size: 70
+----end----
+----------------------------------------------
+

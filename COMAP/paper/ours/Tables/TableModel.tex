@@ -1,0 +1,22 @@
+% To accelerate and manage the process of writing table
+
+\begin{table}[bt!]                    % [] control the position of table
+    \centering
+    \renewcommand{\arraystretch}{1.5}
+    \caption{\centering the name of table}       % caption(name) of table
+    \begin{tabular}{c c c}            % main part of table: {} control alignment(l,c,r)
+        \toprule 
+        % the head of table
+        \midrule
+        % data of table
+        \bottomrule
+    \end{tabular}
+    \begin{tablenotes}
+        \centering
+        \item note1
+        \item note2
+    \end{tablenotes}
+\end{table}
+
+% MORE
+% * You could use s to column identifier to align on decimal point(just like l,c,r).
